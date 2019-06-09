@@ -1,0 +1,99 @@
+@import "utils";
+
+.footer-nav {
+  @include grey-border;
+  display: flex;
+  padding-bottom: 50px;
+  &__socials {
+    padding-top: 32px;
+    margin-right: 100px;
+    &-lang {
+      display: flex;
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 15px;
+      width: $lang-button-width;
+      line-height: 40px;
+      text-align: left;
+      text-decoration: none;
+      background-color: #3b3b3b;
+      color: #fff;
+      margin-bottom: 32px;
+      span {
+        margin-left: 15px;
+      }
+      &-arrow {
+        position: absolute;
+        right: 15px;
+        top: 16px;
+      }
+      @media (max-width: 1023px) {
+        width: 175px;
+      }
+    }
+    &-hashtag {
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      line-height: 19px;
+      span {
+        color: #49a144;
+      }
+    }
+    @media (max-width: 1023px) {
+      margin-right: 80px;
+    }
+  }
+
+  &__additional {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 40px;
+
+    a {
+      width: 100%;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 23px;
+    }
+    @media (max-width: 639px) {
+      padding: 0;
+    }
+  }
+
+  &__partnership {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 40px;
+    margin-right: 100px;
+    width: $footer-col;
+    a {
+      width: 100%;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 23px;
+      &:hover {
+        color: rgba(255,255,255, 0.5);
+      }
+    }
+    @media (max-width: 1023px) {
+      margin-right: 80px;
+    }
+  }
+
+  .footer-nav__additional a:hover {
+    color: rgba(255,255,255, 0.5);
+  }
+  @media (max-width: 639px) {
+    flex-direction: column;
+  }
+}

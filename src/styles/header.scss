@@ -1,0 +1,96 @@
+@import "utils";
+
+.header {
+  height: 72px;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  &-logo {
+    @media (max-width: 1023px) {
+      width: 105px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-wrapper {
+    @include wrapper;
+    $asap-width: 65px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__inputs {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    span {
+      font-size: 16px;
+      line-height: 19px;
+      color: #626262;
+      font-weight: 300;
+      margin: 0 5px;
+    }
+
+    .header__input-comment {
+      max-width: 65px;
+      box-sizing: border-box;
+      @include inputs;
+      cursor: pointer;
+    }
+    .header__input-address {
+      max-width: 292px;
+      box-sizing: border-box;
+
+      @include inputs;
+    }
+    @media (max-width: 1023px) {
+      .header__input-comment {
+        max-width: 57px;
+      }
+      .header__input-address {
+        max-width: 215px;
+      }
+    }
+    @media (max-width: 690px) {
+      display: none;
+    }
+  }
+  &__profile {
+    display: flex;
+    &-sign-in {
+      @include header-button;
+
+      box-sizing: border-box;
+      border: 1px solid #e0e0e0;
+      color: #1d1d1d;
+
+      &:hover {
+        background-color: #49a144;
+        color: #fff;
+      }
+    }
+    &-register {
+      @include header-button;
+
+      background-color: #262626;
+      color: #fff;
+      @media (max-width: 639px) {
+        margin: 0;
+      }
+      &:hover {
+        background-color: #49a144;
+      }
+    }
+    .header__profile-basket {
+      width: 40px;
+      background: url("../images/basket.svg") center;
+      @media (max-width: 639px) {
+        display: none;
+      }
+      &:hover {
+        background-image: url("../images/basket-white.svg");
+        background-color: #49a144;
+      }
+    }
+  }
+}

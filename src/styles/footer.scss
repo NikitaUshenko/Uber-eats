@@ -1,0 +1,62 @@
+@import "utils";
+@import "footer-nav";
+
+.footer {
+  background: $dark-grey;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  &-wrapper {
+    @include wrapper;
+  }
+  &-logo__section {
+    padding-bottom: 40px;
+    @include grey-border;
+  }
+  &__apps {
+    @include grey-border;
+    padding: 40px 0;
+    text-align: center;
+    &-apple {
+      margin-right: 40px;
+      @media (max-width: 639px) {
+        img {
+          height: 35px;
+        }
+      }
+    }
+    &-android {
+      @media (max-width: 639px) {
+        img {
+          height: 35px;
+        }
+      }
+    }
+  }
+  &__policies {
+    color: #fff;
+    padding-top: 40px;
+    font-size: 11px;
+    line-height: 13px;
+
+    &-trademark {
+      display: inline-block;
+      width: $lang-button-width;
+      margin-right: 100px;
+      @media (max-width: 1023px) {
+        width: 175px;
+        margin-right: 80px;
+      }
+      @media (max-width: 639px) {
+        margin-bottom: 25px;
+      }
+    }
+    &-privacy {
+      @include footer-nav-link;
+    }
+    &-terms {
+      @include footer-nav-link;
+
+      margin-right: 0;
+    }
+  }
+}
