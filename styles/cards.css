@@ -1,0 +1,38 @@
+.card {
+  width: 308px;
+  cursor: pointer;
+  padding-bottom: 20px; }
+  .card-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    grid-gap: 16px; }
+  .card:hover {
+    background-color: rgba(75, 75, 75, 0.04);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01); }
+  .card__name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 15px; }
+  .card__features {
+    color: #626262;
+    margin-top: 5px; }
+  .card__time-range {
+    margin-top: 5px;
+    line-height: 21px; }
+  @media (max-width: 1023px) {
+    .card {
+      width: 100%; }
+      .card__image {
+        width: 100%; }
+      .card-wrapper {
+        grid-template-columns: repeat(2, auto); } }
+  @media (max-width: 639px) {
+    .card {
+      width: 100%; }
+      .card-wrapper {
+        grid-template-columns: auto; } }
+
+/*# sourceMappingURL=cards.css.map */
