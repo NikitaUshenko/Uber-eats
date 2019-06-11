@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uber eats</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
@@ -9,16 +10,16 @@
 <body>
   <header class="header">
     <div class="header-wrapper">
-      <a href="index.html" class="header-logo"><img src="images/logo.svg" alt="logo"></a>
-      <div class="header__inputs">
+      <a href="index.html" class="header-logo"><img src="images/logo.svg" alt="Uber-eats"></a>
+      <form class="header__inputs">
         <div class="header__input-comment">ASAP</div>
         <span>to</span>
           <input type="text" class="header__input-address" value="ul. Bolshaya Dmitrovka,22 ">
-      </div>
+      </form>
       <div class="header__profile">
-        <a href="" class="header__profile-sign-in">Sign in</a>
-        <a href="" class="header__profile-register">Register</a>
-        <a href="" class="header__profile-basket"></a>
+        <a href="#" class="header__profile-sign-in">Sign in</a>
+        <a href="#" class="header__profile-register">Register</a>
+        <a href="#" class="header__profile-basket" alt="cart"></a>
       </div>
     </div>
   </header>
@@ -26,7 +27,7 @@
     <div class="main-wrapper">
       <form class="main__search">
         <input type="text" class="main__search-input"  placeholder="Search for restaurant or cuisine">
-        <input type="image" src="images/search.svg" class="main__search-submit">
+        <input type="submit" value="" class="main__search-submit">
       </form>
       <div class="main__input">
         <div class="main__input-comment">ASAP</div>
@@ -34,7 +35,7 @@
         <input type="text" class="main__input-address" value="ul. Bolshaya Dmitrovka,22 ">
       </div>
 
-      <h2 class="main-heading">Kyiv restaurants</h2>
+      <h1 class="main-heading">Kyiv restaurants</h1>
       <div class="card-wrapper">
 
         <div class="card">
